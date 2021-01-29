@@ -15,7 +15,6 @@ public class Recette {
     @Id
     private String id;
     private String nom;
-    @DBRef
     private List<Ingredient> ingredients;
     @DBRef
     private List<Categorie> categories;

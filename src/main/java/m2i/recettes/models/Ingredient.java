@@ -13,7 +13,7 @@ public class Ingredient {
     private String id;
     private String nom;
     private double quantite;
-    private int unite;
+    private String unite;
 
     /**
      * Constructeur vide
@@ -27,7 +27,7 @@ public class Ingredient {
      * @param quantite de l'ingrédient
      * @param unite de l'ingrédient
      */
-    public Ingredient(String nom, double quantite, int unite) {
+    public Ingredient(String nom, double quantite, String unite) {
         this.nom = nom;
         this.quantite = quantite;
         this.unite = unite;
