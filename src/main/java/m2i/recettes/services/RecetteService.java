@@ -78,7 +78,7 @@ public class RecetteService {
         return this.repository.save(recette);
     }
 
-    public List<Recette> findByCategorie(String nom) {
-        return this.repository.findByCategories(nom);
+    public List<Recette> findByCategorie(Categorie categorie) {
+        return this.repository.findByCategories(categorie);
     }
 }

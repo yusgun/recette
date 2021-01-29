@@ -89,9 +89,10 @@ public class RecetteController {
         return this.service.supprimerUneCategorie(id, categorie);
     }
 
-    @GetMapping("/categories/{nom}")
+    @GetMapping("/categories/{categorie}")
     @ResponseStatus(code = HttpStatus.ACCEPTED)
-    public List<Recette> findByCategorie(@PathVariable String nom){
-        return this.service.findByCategorie(nom);
+    public List<Recette> findByCategorie(@PathVariable Categorie categorie){
+        return this.service.findByCategorie(categorie);
     }
+
 }
